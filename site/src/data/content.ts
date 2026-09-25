@@ -72,8 +72,8 @@ export const experience = [
   },
 ];
 
-// Straight certifications and training only — scholarships and hackathons
-// have their own sections below.
+// Straight certifications and training only — hackathons have their own
+// section below.
 export const certifications = [
   { name: 'Cybersecurity Defense Analyst Pathway Exam', issuer: 'Cisco Networking Academy', year: '2026', placeholder: false },
   { name: 'AWS AI Practitioner Challenge', issuer: 'Udacity', year: '2026', placeholder: false },
@@ -82,11 +82,6 @@ export const certifications = [
   { name: 'Solution Creation Training', issuer: 'Nestlé', year: '2025', placeholder: false },
   { name: 'Virtual Assistant Course Completion', issuer: 'ALX', year: '2024', placeholder: false },
   { name: 'Data Analytics Essentials', issuer: 'Cisco Networking Academy', year: '2024', placeholder: false },
-];
-
-export const scholarships = [
-  { name: 'Full-Tuition Scholarship', issuer: 'The Esan Family Trust Fund', year: '2025 & 2026', placeholder: false },
-  { name: 'Full-Tuition Scholarship', issuer: 'The Oyefeso Family', year: '2023', placeholder: false },
 ];
 
 export const hackathons = [
