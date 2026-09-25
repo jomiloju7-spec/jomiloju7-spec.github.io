@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f4f7fb;
+  --surface: #ffffff;
+  --fg: #101827;
+  --muted: #55647a;
+  --primary: #0d9488;
+  --accent: #0284c7;
+  --highlight: #6366f1;
+  --border: rgba(16, 24, 39, 0.1);
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #070b12;
+  --surface: #0f1623;
+  --fg: #e8eef7;
+  --muted: #94a3b8;
+  --primary: #2dd4bf;
+  --accent: #38bdf8;
+  --highlight: #818cf8;
+  --border: rgba(232, 238, 247, 0.1);
+  color-scheme: dark;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body), 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display), var(--font-body), sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: var(--primary);
+  color: var(--bg);
+}
+
+.focus-ring {
+  outline: none;
+}
+.focus-ring:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: 0.5rem;
+}

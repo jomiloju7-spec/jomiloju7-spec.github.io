@@ -1,0 +1,5 @@
+Drop your real résumé here as "resume.pdf" (same folder as this file).
+
+The "Download Resume" button on the site links to /resume.pdf. Until that
+file exists, the button will 404. This placeholder file is safe to delete
+once resume.pdf has been added.
