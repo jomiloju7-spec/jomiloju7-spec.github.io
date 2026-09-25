@@ -42,7 +42,7 @@ export const hero = {
   headline: profile.name,
   subhead: profile.tagline,
   description:
-    'Chemical Engineering undergraduate at the University of Lagos with a focus on environmental engineering and sustainable industrial practice — from material selection in production settings to process optimization. Currently a CNN Voices From the South journalism fellow, reporting on the stories behind that work.',
+    'Chemical Engineering undergraduate at the University of Lagos with a focus on environmental engineering and sustainable industrial practice — from material selection in production settings to process optimization.',
 };
 
 export const experience = [
