@@ -8,11 +8,7 @@ export function Certifications() {
   return (
     <section id="certifications" className="px-4 py-24">
       <div className="container">
-        <SectionHeading
-          eyebrow="Credentials"
-          title="Certifications & Achievements"
-          description="Placeholder cards until real certifications are added."
-        />
+        <SectionHeading eyebrow="Credentials" title="Certifications & Achievements" />
         <div className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {certifications.map((cert, i) => (
             <Reveal key={cert.name + i} index={i}>

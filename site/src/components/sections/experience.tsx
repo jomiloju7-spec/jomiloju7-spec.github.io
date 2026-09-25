@@ -7,11 +7,7 @@ export function Experience() {
   return (
     <section id="experience" className="px-4 py-24">
       <div className="container">
-        <SectionHeading
-          eyebrow="Career"
-          title="Experience"
-          description="A placeholder timeline — real roles will replace these cards as they're added to src/data/content.ts."
-        />
+        <SectionHeading eyebrow="Career" title="Experience" />
         <ol className="mx-auto flex max-w-2xl flex-col gap-6 border-l border-border pl-6">
           {experience.map((job, i) => (
             <Reveal key={job.role + i} index={i} as="li" className="relative">

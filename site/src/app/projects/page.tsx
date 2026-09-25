@@ -31,10 +31,6 @@ export default function ProjectsPage() {
               Full index
             </p>
             <h1 className="mt-3 font-display text-4xl font-semibold">All Projects</h1>
-            <p className="mt-4 text-muted">
-              Every project listed here is currently a placeholder — replace these entries in
-              src/data/content.ts with real work.
-            </p>
           </div>
 
           <div className="mt-8 flex flex-wrap justify-center gap-2">

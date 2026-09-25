@@ -10,11 +10,7 @@ export function Projects() {
   return (
     <section id="projects" className="px-4 py-24">
       <div className="container">
-        <SectionHeading
-          eyebrow="Work"
-          title="Featured Projects"
-          description="Placeholder entries — swap in real projects in src/data/content.ts."
-        />
+        <SectionHeading eyebrow="Work" title="Featured Projects" />
         <div className="mx-auto grid max-w-5xl gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {featured.map((project, i) => (
             <Reveal key={project.slug} index={i}>
