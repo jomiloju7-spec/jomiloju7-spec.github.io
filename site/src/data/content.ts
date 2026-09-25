@@ -110,6 +110,10 @@ export const aboutQA = [
 
 export const skills = [
   {
+    group: 'AI & Machine Learning',
+    items: ['LangChain', 'LangGraph', 'Google Gemini API', 'Prompt Engineering', 'AI Agent Workflows', 'AWS AI Practitioner', 'AWS AI Services'],
+  },
+  {
     group: 'Programming Languages',
     items: ['Python', 'JavaScript', 'HTML/CSS', 'JSON', 'React Native'],
   },
