@@ -92,8 +92,6 @@ move it to `site/src/app/api/contact/route.ts` and drop `output: 'export'`.
 
 ## Known placeholders to fill in
 
-- **Resume**: drop a real PDF at `site/public/resume.pdf` (the Hero
-  "Download Resume" button links to `/resume.pdf` and currently 404s).
-- **Second project card**: `content.ts` has one real project (Repo Audit)
-  and one placeholder — swap in your next project when it's ready.
+- **More projects**: `content.ts` currently lists one project (Repo Audit) —
+  add more entries to the `projects` array as you build them.
 - **Contact form endpoint**: see above.

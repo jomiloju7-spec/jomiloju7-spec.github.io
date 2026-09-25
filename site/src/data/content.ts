@@ -154,16 +154,6 @@ export const projects: Project[] = [
     featured: true,
     placeholder: false,
   },
-  {
-    slug: 'next-project',
-    title: 'Next project — coming soon',
-    description: 'Another project will land here once it is ready to show.',
-    role: 'Builder',
-    year: '2026',
-    tech: [],
-    featured: true,
-    placeholder: true,
-  },
 ];
 
 export const education = [
