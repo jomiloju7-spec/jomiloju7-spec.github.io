@@ -1,25 +1,8 @@
 // Small brand marks for the Hero credential badges.
 
 function CnnMark() {
-  // No official CNN logo asset on hand — recreated as a clean mark in
-  // CNN's real brand red rather than left blank.
-  return (
-    <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden>
-      <rect width="22" height="22" rx="5" fill="#CC0000" />
-      <text
-        x="11"
-        y="15"
-        textAnchor="middle"
-        fontFamily="Arial, Helvetica, sans-serif"
-        fontWeight="800"
-        fontSize="8.5"
-        fill="#ffffff"
-        letterSpacing="0.3"
-      >
-        CNN
-      </text>
-    </svg>
-  );
+  // eslint-disable-next-line @next/next/no-img-element
+  return <img src="/cnn-logo.png" alt="" className="h-[22px] w-[22px] shrink-0 rounded-[5px]" />;
 }
 
 function UnilagMark() {
