@@ -49,7 +49,7 @@ export const experience = [
   {
     role: 'Voices From the South Fellow — Sharing Stories Affecting the World',
     org: 'CNN (Cable News Network), United States',
-    period: '11/2025 — Present',
+    period: '06/2025 — 11/2025',
     summary:
       'Selected from over 10,800 applicants across 129 countries for a three-month journalism fellowship. Completed CNN Academy Hub coursework in storytelling, journalistic ethics, breaking news coverage and field reporting, and applied rigorous ethical frameworks to fact-driven environmental reporting.',
     placeholder: false,
