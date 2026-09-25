@@ -59,7 +59,7 @@ export const experience = [
     org: 'Protean Designs',
     period: '01/2023 — Present',
     summary:
-      'Gained foundational experience in archival research and records management within the Nigerian institutional context.',
+      'Lead graphic design for the studio — brand identity and marketing materials for clients, plus social media graphics and digital content across platforms.',
     placeholder: false,
   },
   {
@@ -105,7 +105,7 @@ export const aboutQA = [
   },
   {
     q: 'What do you do outside your coursework?',
-    a: "I lead design at Protean Designs, where I've picked up archival research and records management in a Nigerian institutional context. I'm also active in AIChE and NSChE at Unilag, a Cowrywise Ambassador, and I volunteered on the media team covering The Industry Discourse (TID 5.0).",
+    a: "I lead graphic design at Protean Designs — brand identity, marketing materials and social content for clients. I'm also active in AIChE and NSChE at Unilag, a Cowrywise Ambassador, and I volunteered on the media team covering The Industry Discourse (TID 5.0).",
   },
   {
     q: "What's something you're currently learning?",
