@@ -1,10 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight, Mail } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { credentialBadges, hero, profile } from '@/data/content';
 import { Button } from '@/components/ui/button';
 import { CredentialBadge } from '@/components/credential-badge';
+import { GmailIcon } from '@/components/gmail-icon';
 
 const container = {
   hidden: {},
@@ -52,7 +53,7 @@ export function Hero() {
           <motion.div variants={item} className="mt-6 flex flex-wrap items-center gap-3">
             <Button variant="primary" asChild>
               <a href="/#contact">
-                <Mail size={16} />
+                <GmailIcon size={16} />
                 Contact
               </a>
             </Button>
