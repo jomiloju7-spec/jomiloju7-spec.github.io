@@ -9,7 +9,7 @@
 
 export const profile = {
   name: 'Oluwajomiloju Dare-Esan',
-  shortName: 'Jomiloju',
+  shortName: 'Oluwajomiloju',
   tagline: 'Chemical Engineering Undergraduate · Sustainable Process Engineer',
   location: 'Lagos, Nigeria',
   email: 'jomilojudareesan7@gmail.com',
@@ -100,7 +100,7 @@ export const aboutQA = [
   },
   {
     q: 'What do you do outside your coursework?',
-    a: "I lead graphic design at Protean Designs — brand identity, marketing materials and social content for clients. I'm also active in AIChE and NSChE at Unilag, a Cowrywise Ambassador, and I volunteered on the media team covering The Industry Discourse (TID 5.0).",
+    a: "I lead graphic design at Protean Designs — brand identity, marketing materials, and social content for clients. I'm also active in AIChE and NSChE at Unilag, a Cowrywise Ambassador, and I volunteered on the media team covering The Industry Discourse (TID 5.0).",
   },
   {
     q: "What's something you're currently learning?",
@@ -171,13 +171,13 @@ export const education = [
   {
     degree: 'Bachelor of Science, Chemical Engineering',
     school: 'University of Lagos, Nigeria',
-    period: '09/2023 — 07/2028',
+    period: '09/2023 — 08/2028',
     placeholder: false,
   },
 ];
 
 export const contact = {
   heading: "Let's talk",
-  blurb: "Have a role, project or question in mind? These links reach me directly.",
+  blurb: "Have a role, project, or question in mind? These links reach me directly.",
   closing: "Thanks for stopping by — I'm looking forward to hearing from you.",
 };
