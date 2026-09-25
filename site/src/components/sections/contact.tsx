@@ -1,15 +1,14 @@
-import { Github, Linkedin } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import { contact, profile } from '@/data/content';
 import { SectionHeading } from '@/components/section-heading';
 import { Reveal } from '@/components/reveal';
-import { GmailIcon } from '@/components/gmail-icon';
 
 const links = [
   {
     href: `mailto:${profile.email}`,
     label: 'Email',
-    icon: <GmailIcon size={26} />,
-    hoverClass: 'hover:border-[#EA4335]',
+    icon: <Mail size={28} strokeWidth={1.75} />,
+    hoverClass: 'hover:bg-primary hover:text-bg hover:border-primary',
   },
   {
     href: profile.linkedin,
