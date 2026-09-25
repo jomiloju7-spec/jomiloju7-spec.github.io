@@ -88,12 +88,12 @@ export const aboutQA = [
     a: "An interest in environmental engineering and sustainable industrial practice — I wanted a career that applies engineering principles to reducing environmental impact and supporting cleaner production systems, not just running a process for its own sake.",
   },
   {
-    q: 'How does a CNN journalism fellowship fit alongside an engineering degree?',
-    a: "As part of CNN's Voices From the South fellowship, I learned to apply the same rigor I use in the lab to reporting: accuracy, fact-driven research and objective storytelling — this time aimed at environmental stories instead of lab data.",
+    q: 'What was the CNN Voices From the South fellowship like?',
+    a: "I was one of a small group picked from over 10,800 applicants across 129 countries for the three-month fellowship. Through the CNN Academy Hub I worked on storytelling, journalistic ethics and field reporting, and learned to bring the same fact-driven rigor from engineering into environmental reporting.",
   },
   {
-    q: 'What keeps you busy outside coursework?',
-    a: "I lead design work at Protean Designs, where I've picked up archival research and records management in a Nigerian institutional context, and I'm active with AIChE and NSChE at Unilag.",
+    q: 'What do you do outside your coursework?',
+    a: "I lead design at Protean Designs, where I've picked up archival research and records management in a Nigerian institutional context. I'm also active in AIChE and NSChE at Unilag, a Cowrywise Ambassador, and I volunteered on the media team covering The Industry Discourse (TID 5.0).",
   },
   {
     q: "What's something you're currently learning?",

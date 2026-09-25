@@ -6,11 +6,7 @@ export function About() {
   return (
     <section id="about" className="px-4 py-24">
       <div className="container">
-        <SectionHeading
-          eyebrow="About"
-          title="A little more about me"
-          description="Placeholder Q&A — rewrite these answers in src/data/content.ts to tell your own story."
-        />
+        <SectionHeading eyebrow="About" title="A little more about me" />
         <div className="mx-auto grid max-w-3xl gap-4 sm:grid-cols-2">
           {aboutQA.map((qa, i) => (
             <Reveal key={qa.q} index={i} className="rounded-2xl border border-border bg-surface p-6">
