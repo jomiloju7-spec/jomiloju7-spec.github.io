@@ -2,8 +2,9 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight, Mail } from 'lucide-react';
-import { hero, profile } from '@/data/content';
+import { credentialBadges, hero, profile } from '@/data/content';
 import { Button } from '@/components/ui/button';
+import { CredentialBadge } from '@/components/credential-badge';
 
 const container = {
   hidden: {},
@@ -42,7 +43,13 @@ export function Hero() {
             {hero.description}
           </motion.p>
 
-          <motion.div variants={item} className="mt-9 flex flex-wrap items-center gap-3">
+          <motion.div variants={item} className="mt-6 flex flex-wrap items-center gap-3">
+            {credentialBadges.map((b) => (
+              <CredentialBadge key={b.label} label={b.label} mark={b.mark} />
+            ))}
+          </motion.div>
+
+          <motion.div variants={item} className="mt-6 flex flex-wrap items-center gap-3">
             <Button variant="primary" asChild>
               <a href="/#contact">
                 <Mail size={16} />

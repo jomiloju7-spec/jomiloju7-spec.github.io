@@ -4,6 +4,8 @@ import { Footer } from '@/components/footer';
 import { Hero } from '@/components/sections/hero';
 import { Experience } from '@/components/sections/experience';
 import { Certifications } from '@/components/sections/certifications';
+import { Hackathons } from '@/components/sections/hackathons';
+import { Scholarships } from '@/components/sections/scholarships';
 import { Skills } from '@/components/sections/skills';
 import { Projects } from '@/components/sections/projects';
 import { About } from '@/components/sections/about';
@@ -19,6 +21,8 @@ export default function Home() {
         <Hero />
         <Experience />
         <Certifications />
+        <Hackathons />
+        <Scholarships />
         <Skills />
         <Projects />
         <About />

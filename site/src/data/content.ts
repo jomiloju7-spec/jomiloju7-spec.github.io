@@ -10,7 +10,7 @@
 export const profile = {
   name: 'Oluwajomiloju Dare-Esan',
   shortName: 'Jomiloju',
-  tagline: 'Chemical Engineering Undergraduate · Sustainable Process Engineering',
+  tagline: 'Chemical Engineering Undergraduate · Sustainable Process Engineer',
   location: 'Lagos, Nigeria',
   email: 'jomilojudareesan7@gmail.com',
   linkedin: 'https://www.linkedin.com/in/jomidareesan',
@@ -18,8 +18,14 @@ export const profile = {
   // Drop resume.pdf into /public (site/public/resume.pdf) — it is currently
   // a placeholder link and the button will 404 until the file is added.
   resumeUrl: '/resume.pdf',
-  statusBadges: ['CNN Voices From the South Fellow', 'Based in Lagos, Nigeria'],
 };
+
+// Small credibility badges shown in the Hero, each with a brand mark.
+// "mark" selects which icon renders — see CredentialBadge component.
+export const credentialBadges = [
+  { label: "CNN Academy Fellow '25", mark: 'cnn' as const },
+  { label: 'Graduating 2028', mark: 'unilag' as const },
+];
 
 export const nav = [
   { label: 'Home', href: '/#hero' },
@@ -66,20 +72,26 @@ export const experience = [
   },
 ];
 
-// Certifications, awards, fellowships and hackathon results — grouped as one
-// achievements grid.
+// Straight certifications and training only — scholarships and hackathons
+// have their own sections below.
 export const certifications = [
   { name: 'Cybersecurity Defense Analyst Pathway Exam', issuer: 'Cisco Networking Academy', year: '2026', placeholder: false },
   { name: 'AWS AI Practitioner Challenge', issuer: 'Udacity', year: '2026', placeholder: false },
-  { name: 'USAII Global AI Hackathon — Finalist, Graduate Track', issuer: 'United States Artificial Intelligence Institute', year: '2026', placeholder: false },
-  { name: 'Frontier Engineering Challenge', issuer: 'Micro1', year: '2026', placeholder: false },
   { name: 'CNN "Voices of the South" Fellowship', issuer: 'CNN', year: '2025', placeholder: false },
   { name: 'Food Product Development Training', issuer: 'Nestlé', year: '2025', placeholder: false },
   { name: 'Solution Creation Training', issuer: 'Nestlé', year: '2025', placeholder: false },
-  { name: 'Full-Tuition Scholarship', issuer: 'The Esan Family Trust Fund', year: '2025 & 2026', placeholder: false },
   { name: 'Virtual Assistant Course Completion', issuer: 'ALX', year: '2024', placeholder: false },
   { name: 'Data Analytics Essentials', issuer: 'Cisco Networking Academy', year: '2024', placeholder: false },
+];
+
+export const scholarships = [
+  { name: 'Full-Tuition Scholarship', issuer: 'The Esan Family Trust Fund', year: '2025 & 2026', placeholder: false },
   { name: 'Full-Tuition Scholarship', issuer: 'The Oyefeso Family', year: '2023', placeholder: false },
+];
+
+export const hackathons = [
+  { name: 'USAII Global AI Hackathon — Finalist, Graduate Track', issuer: 'United States Artificial Intelligence Institute', year: '2026', placeholder: false },
+  { name: 'Frontier Engineering Challenge', issuer: 'Micro1', year: '2026', placeholder: false },
 ];
 
 export const aboutQA = [
