@@ -2,7 +2,6 @@ import { education } from '@/data/content';
 import { SectionHeading } from '@/components/section-heading';
 import { Reveal } from '@/components/reveal';
 import { Badge } from '@/components/ui/badge';
-import { GraduationCap } from 'lucide-react';
 
 export function Education() {
   return (
@@ -16,7 +15,8 @@ export function Education() {
               index={i}
               className="flex flex-col gap-3 rounded-2xl border border-border bg-surface p-6 sm:flex-row sm:items-start"
             >
-              <GraduationCap className="mt-1 shrink-0 text-highlight" size={24} />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/unilag-logo.png" alt="" className="mt-1 h-11 w-11 shrink-0" />
               <div>
                 <div className="flex flex-wrap items-center gap-2">
                   <h3 className="font-display font-semibold">{ed.degree}</h3>
@@ -25,7 +25,6 @@ export function Education() {
                 <p className="mt-1 text-sm font-medium text-primary">
                   {ed.school} · {ed.period}
                 </p>
-                <p className="mt-2 text-sm text-muted">{ed.notes}</p>
               </div>
             </Reveal>
           ))}

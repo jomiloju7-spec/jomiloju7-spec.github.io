@@ -9,7 +9,7 @@ import { nav, profile } from '@/data/content';
 import { ThemeToggle } from './theme-toggle';
 import { cn } from '@/lib/utils';
 
-const sectionIds = ['hero', 'experience', 'skills', 'projects', 'about', 'contact'];
+const sectionIds = ['hero', 'experience', 'skills', 'projects', 'about', 'education', 'contact'];
 
 export function Nav() {
   const pathname = usePathname();
@@ -33,9 +33,6 @@ export function Nav() {
     return () => observer.disconnect();
   }, [pathname]);
 
-  const links = nav.filter((l) => l.label !== 'All Projects');
-  const projectsLink = nav.find((l) => l.label === 'All Projects')!;
-
   return (
     <header className="fixed inset-x-0 top-4 z-50 flex justify-center px-4">
       <motion.nav
@@ -52,7 +49,7 @@ export function Nav() {
         </Link>
 
         <div className="hidden items-center gap-1 md:flex">
-          {links.map((item) => {
+          {nav.map((item) => {
             const id = item.href.split('#')[1];
             const isActive = pathname === '/' && active === id;
             return (
@@ -75,15 +72,6 @@ export function Nav() {
               </Link>
             );
           })}
-          <Link
-            href={projectsLink.href}
-            className={cn(
-              'focus-ring rounded-full px-3 py-2 text-sm font-medium text-muted transition-colors hover:text-fg',
-              pathname === '/projects' && 'text-fg',
-            )}
-          >
-            {projectsLink.label}
-          </Link>
         </div>
 
         <div className="flex items-center gap-2">

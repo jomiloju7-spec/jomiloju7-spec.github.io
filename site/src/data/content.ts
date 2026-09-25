@@ -33,8 +33,8 @@ export const nav = [
   { label: 'Skills', href: '/#skills' },
   { label: 'Projects', href: '/#projects' },
   { label: 'About', href: '/#about' },
+  { label: 'Education', href: '/#education' },
   { label: 'Contact', href: '/#contact' },
-  { label: 'All Projects', href: '/projects' },
 ];
 
 export const hero = {
@@ -173,7 +173,6 @@ export const education = [
     degree: 'Bachelor of Science, Chemical Engineering',
     school: 'University of Lagos, Nigeria',
     period: '09/2023 — 07/2028',
-    notes: 'Coursework includes process dynamics and fluid flow measurement, presented at Unilag in 2026 (dynamic response of a mercury-in-glass thermometer; discharge-rate measurement via venturi meter, orifice plate and rotameter).',
     placeholder: false,
   },
 ];
