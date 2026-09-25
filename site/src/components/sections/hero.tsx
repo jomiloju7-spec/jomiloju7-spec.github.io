@@ -5,6 +5,7 @@ import { ArrowRight, Download } from 'lucide-react';
 import { hero, profile } from '@/data/content';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { GlitchPortrait } from '@/components/glitch-portrait';
 
 const container = {
   hidden: {},
@@ -28,6 +29,10 @@ export function Hero() {
         variants={container}
         className="mx-auto flex max-w-3xl flex-col items-center"
       >
+        <motion.div variants={item} className="mb-6">
+          <GlitchPortrait src="/portrait.jpg" alt={profile.name} />
+        </motion.div>
+
         <motion.div variants={item} className="mb-6 flex flex-wrap items-center justify-center gap-2">
           {profile.statusBadges.map((b) => (
             <Badge key={b}>{b}</Badge>

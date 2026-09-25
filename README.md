@@ -13,8 +13,7 @@ deployed as a static site to GitHub Pages.
 │   │   ├── components/        UI components, section components, sections/ui
 │   │   ├── data/content.ts    <-- single source of truth for all site copy
 │   │   └── lib/
-│   ├── public/                Static assets (favicon, resume.pdf goes here)
-│   └── reference/             Reference-only API route (see "Contact form")
+│   └── public/                Static assets (favicon, resume.pdf, portrait.jpg)
 ├── lexicon/                   Vocabulary practice app, separate project
 └── .github/workflows/deploy.yml   Builds `site/` and publishes to GitHub Pages
 ```
@@ -66,32 +65,13 @@ For this to work, the repository's **Settings → Pages → Build and
 deployment → Source** must be set to **"GitHub Actions"** (not "Deploy from
 a branch"). This is a one-time manual step in the repo settings.
 
-## Contact form
+## Contact
 
-GitHub Pages can't run server code, so the contact form does **not** use a
-Next.js API route in production. Instead:
-
-- `site/src/components/sections/contact.tsx` posts the form to a
-  Formspree-style endpoint read from `NEXT_PUBLIC_FORM_ENDPOINT`.
-- **To wire up real submissions:** create a form at
-  [formspree.io](https://formspree.io) (or any similar static-friendly form
-  service), then set `NEXT_PUBLIC_FORM_ENDPOINT` to that endpoint URL —
-  either in `site/.env.local` for local builds, or as a repository/
-  environment variable (`vars.NEXT_PUBLIC_FORM_ENDPOINT`) that the deploy
-  workflow already passes through to the build.
-- **Until that's set**, submitting the form falls back to opening a
-  `mailto:` link pre-filled with the message, so it never silently fails.
-- A one-click "copy email" button next to the form always works regardless
-  of form service setup.
-
-A reference-only Next.js API route lives at
-`site/reference/contact-route.example.ts`. It is **not** part of the build
-and will not run on GitHub Pages — it's kept only in case this project is
-ever redeployed to a Node-capable host (e.g. Vercel), at which point you'd
-move it to `site/src/app/api/contact/route.ts` and drop `output: 'export'`.
+The Contact section is a row of icon links (email, LinkedIn, GitHub) that go
+straight to `mailto:`/profile URLs from `content.ts` — no form, no backend
+needed, works the same on static GitHub Pages hosting as anywhere else.
 
 ## Known placeholders to fill in
 
 - **More projects**: `content.ts` currently lists one project (Repo Audit) —
   add more entries to the `projects` array as you build them.
-- **Contact form endpoint**: see above.

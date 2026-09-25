@@ -168,11 +168,6 @@ export const education = [
 
 export const contact = {
   heading: "Let's talk",
-  blurb:
-    "Have a role, project or question in mind? I'd like to hear from you — the form below and the links here all reach me directly.",
+  blurb: "Have a role, project or question in mind? These links reach me directly.",
   closing: "Thanks for stopping by — I'm looking forward to hearing from you.",
-  // Static-friendly contact form: plug a Formspree (or similar) endpoint ID
-  // in here. Until it's set, the form falls back to a mailto: link so it
-  // still works. See README "Contact form" section for setup steps.
-  formEndpoint: process.env.NEXT_PUBLIC_FORM_ENDPOINT || '',
 };
