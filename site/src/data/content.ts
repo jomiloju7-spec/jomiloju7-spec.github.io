@@ -67,7 +67,7 @@ export const experience = [
     org: 'The Industry Discourse (TID 5.0)',
     period: 'July 2026',
     summary:
-      'Supported the media team through photography, videography and content creation for social platforms — including real-time session coverage and promotional material to boost event visibility.',
+      'Supported the media team through photography, videography, and content creation for social platforms — including real-time session coverage and promotional material to boost event visibility.',
     placeholder: false,
   },
 ];
@@ -82,7 +82,7 @@ export const certifications = [
   { name: 'Solution Creation Training', issuer: 'Nestlé', year: '2025', placeholder: false },
   { name: 'Virtual Assistant Course Completion', issuer: 'ALX', year: '2024', placeholder: false },
   { name: 'Data Analytics Essentials', issuer: 'Cisco Networking Academy', year: '2024', placeholder: false },
-  { name: 'SAChE Process Safety Fundamentals Certificate', issuer: 'AIChE - American Institute of Chemical Engineers', year: '2026', placeholder: false },
+  { name: 'SAChE Process Safety Fundamentals', issuer: 'AIChE - American Institute of Chemical Engineers', year: '2026', placeholder: false },
 ];
 
 export const hackathons = [
@@ -99,15 +99,15 @@ export const memberships = [
 export const aboutQA = [
   {
     q: 'What pulled you toward chemical engineering?',
-    a: "An interest in environmental engineering and sustainable industrial practice — I wanted a career that applies engineering principles to reducing environmental impact and supporting cleaner production systems, not just running a process for its own sake.",
+    a: "My interest in environmental engineering and sustainable industrial practices stems from a desire to apply engineering principles to reducing environmental impact and advancing cleaner production systems.",
   },
   {
     q: 'What was the CNN Voices From the South fellowship like?',
-    a: "I was one of a small group picked from over 10,800 applicants across 129 countries for the three-month fellowship. Through the CNN Academy Hub I worked on storytelling, journalistic ethics and field reporting, and learned to bring the same fact-driven rigor from engineering into environmental reporting.",
+    a: "I was selected from more than 10,800 applicants across 129 countries to join a small cohort for a fellowship that lasted three months. At the CNN Academy Hub, I strengthened my skills in storytelling, journalistic ethics, and field reporting while applying the same commitment to facts and precision that guides my engineering work to environmental journalism.",
   },
   {
     q: 'What do you do outside your coursework?',
-    a: "I lead graphic design at Protean Designs — brand identity, marketing materials, and social content for clients. I'm also active in AIChE and NSChE at Unilag, a Cowrywise Ambassador, and I volunteered on the media team covering The Industry Discourse (TID 5.0).",
+    a: "My work spans research, creative projects, and journalism.",
   },
   {
     q: "What's something you're currently learning?",
