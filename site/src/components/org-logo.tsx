@@ -10,6 +10,7 @@ const orgLogos: Record<string, string> = {
   'CNN (Cable News Network), United States': '/cnn-logo.png',
   'AIChE - American Institute of Chemical Engineers': '/aiche-logo.png',
   'American Institute of Chemical Engineers (AIChE)': '/aiche-logo.png',
+  'Nigerian Society of Chemical Engineers (NSChE)': '/nsche-logo.png',
   'Cisco Networking Academy': '/cisco-logo.png',
   Udacity: '/udacity-logo.png',
   Nestlé: '/nestle-logo.png',
