@@ -82,6 +82,7 @@ export const certifications = [
   { name: 'Solution Creation Training', issuer: 'Nestlé', year: '2025', placeholder: false },
   { name: 'Virtual Assistant Course Completion', issuer: 'ALX', year: '2024', placeholder: false },
   { name: 'Data Analytics Essentials', issuer: 'Cisco Networking Academy', year: '2024', placeholder: false },
+  { name: 'SAChE Process Safety Fundamentals Certificate', issuer: 'AIChE - American Institute of Chemical Engineers', year: '2026', placeholder: false },
 ];
 
 export const hackathons = [

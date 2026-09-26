@@ -3,6 +3,7 @@ import { SectionHeading } from '@/components/section-heading';
 import { Reveal } from '@/components/reveal';
 import { Badge } from '@/components/ui/badge';
 import { Award } from 'lucide-react';
+import { OrgLogo } from '@/components/org-logo';
 
 export function Certifications() {
   return (
@@ -14,7 +15,7 @@ export function Certifications() {
             <Reveal key={cert.name + i} index={i}>
               <div className="flex h-full flex-col gap-3 rounded-2xl border border-border bg-surface p-6 transition-transform hover:-translate-y-1">
                 <div className="flex items-center justify-between">
-                  <Award className="text-accent" size={22} />
+                  <OrgLogo issuer={cert.issuer} size={30} fallback={<Award className="text-accent" size={22} />} />
                   {cert.placeholder && <Badge tone="muted">Placeholder</Badge>}
                 </div>
                 <h3 className="font-display font-semibold">{cert.name}</h3>
