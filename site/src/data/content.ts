@@ -90,6 +90,11 @@ export const hackathons = [
   { name: 'Frontier Engineering Challenge', issuer: 'Micro1', year: '2026', placeholder: false },
 ];
 
+export const memberships = [
+  { org: 'American Institute of Chemical Engineers (AIChE)', chapter: 'University of Lagos Chapter', period: '2023 — Present' },
+  { org: 'Nigerian Society of Chemical Engineers (NSChE)', chapter: 'University of Lagos Chapter', period: '2023 — Present' },
+];
+
 export const aboutQA = [
   {
     q: 'What pulled you toward chemical engineering?',
