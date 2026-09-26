@@ -16,6 +16,9 @@ const orgLogos: Record<string, string> = {
   Nestlé: '/nestle-logo.png',
   ALX: '/alx-logo.png',
   'The Industry Discourse (TID 5.0)': '/tid-logo.png',
+  'United States Artificial Intelligence Institute': '/usaii-logo.png',
+  Micro1: '/micro1-logo.png',
+  Cowrywise: '/cowrywise-logo.png',
 };
 
 export function OrgLogo({ issuer, size = 22, fallback }: { issuer: string; size?: number; fallback: ReactNode }) {

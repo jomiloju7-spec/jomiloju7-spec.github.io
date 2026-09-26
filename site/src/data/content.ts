@@ -93,6 +93,7 @@ export const hackathons = [
 export const memberships = [
   { org: 'American Institute of Chemical Engineers (AIChE)', chapter: 'University of Lagos Chapter', period: '2023 — Present' },
   { org: 'Nigerian Society of Chemical Engineers (NSChE)', chapter: 'University of Lagos Chapter', period: '2023 — Present' },
+  { org: 'Cowrywise', chapter: 'Ambassador', period: '2025 — Present' },
 ];
 
 export const aboutQA = [
