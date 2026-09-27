@@ -16,7 +16,7 @@ export function Experience() {
               <div className="rounded-2xl border border-border bg-surface p-6">
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <div className="flex items-center gap-2.5">
-                    <OrgLogo issuer={job.org} size={20} fallback={null} />
+                    <OrgLogo issuer={job.org} size={26} fallback={null} />
                     <h3 className="font-display text-lg font-semibold">{job.role}</h3>
                   </div>
                   {job.placeholder && <Badge tone="muted">Placeholder</Badge>}

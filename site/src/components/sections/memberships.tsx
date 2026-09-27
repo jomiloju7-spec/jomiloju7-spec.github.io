@@ -13,7 +13,7 @@ export function Memberships() {
           {memberships.map((m, i) => (
             <Reveal key={m.org + i} index={i}>
               <div className="flex h-full flex-col gap-3 rounded-2xl border border-border bg-surface p-6 transition-transform hover:-translate-y-1">
-                <OrgLogo issuer={m.org} size={30} fallback={<Users className="text-highlight" size={22} />} />
+                <OrgLogo issuer={m.org} size={40} fallback={<Users className="text-highlight" size={22} />} />
                 <h3 className="font-display font-semibold">{m.org}</h3>
                 <p className="text-sm text-muted">
                   {m.chapter} · {m.period}

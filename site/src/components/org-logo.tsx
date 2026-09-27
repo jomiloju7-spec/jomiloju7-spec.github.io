@@ -21,19 +21,22 @@ const orgLogos: Record<string, string> = {
   Cowrywise: '/cowrywise-logo.png',
 };
 
-export function OrgLogo({ issuer, size = 22, fallback }: { issuer: string; size?: number; fallback: ReactNode }) {
+export function OrgLogo({ issuer, size = 32, fallback }: { issuer: string; size?: number; fallback: ReactNode }) {
   const src = orgLogos[issuer];
   if (!src) return <>{fallback}</>;
   // White chip behind every mark: guarantees contrast for thin-lined or
   // dark-on-transparent logos (Nestlé, Udacity) and reads fine behind
-  // solid-tile logos (CNN, AIChE) too.
+  // solid-tile logos (CNN, AIChE) too. Height is fixed, width grows to fit
+  // the logo's natural shape — square icon marks stay compact, wide
+  // wordmarks (Cowrywise, USAII, Udacity) get room instead of being
+  // squeezed into a square and shrunk.
   return (
     <span
-      className="inline-flex shrink-0 items-center justify-center rounded-[6px] bg-white p-1"
-      style={{ width: size + 8, height: size + 8 }}
+      className="inline-flex shrink-0 items-center justify-center rounded-lg bg-white px-2.5 py-1.5"
+      style={{ height: size + 12 }}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={src} alt="" className="object-contain" style={{ width: size, height: size }} />
+      <img src={src} alt="" className="w-auto object-contain" style={{ height: size }} />
     </span>
   );
 }

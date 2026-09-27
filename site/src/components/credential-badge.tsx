@@ -2,12 +2,12 @@
 
 function CnnMark() {
   // eslint-disable-next-line @next/next/no-img-element
-  return <img src="/cnn-logo.png" alt="" className="h-[22px] w-[22px] shrink-0 rounded-[5px]" />;
+  return <img src="/cnn-logo.png" alt="" className="h-7 w-7 shrink-0 rounded-[6px]" />;
 }
 
 function UnilagMark() {
   // eslint-disable-next-line @next/next/no-img-element
-  return <img src="/unilag-logo.png" alt="" className="h-[22px] w-[22px] shrink-0" />;
+  return <img src="/unilag-logo.png" alt="" className="h-7 w-7 shrink-0" />;
 }
 
 const marks = {
@@ -19,7 +19,7 @@ export function CredentialBadge({ label, mark }: { label: string; mark: keyof ty
   const { Icon, borderClass, textClass } = marks[mark];
   return (
     <span
-      className={`inline-flex items-center gap-2 rounded-full border bg-surface py-1.5 pl-1.5 pr-3.5 text-sm font-semibold ${borderClass} ${textClass}`}
+      className={`inline-flex items-center gap-2.5 rounded-full border bg-surface py-1.5 pl-1.5 pr-4 text-base font-semibold ${borderClass} ${textClass}`}
     >
       <Icon />
       {label}
