@@ -13,7 +13,7 @@ export function Hackathons() {
           {hackathons.map((h, i) => (
             <Reveal key={h.name + h.issuer + i} index={i}>
               <div className="flex h-full flex-col gap-3 rounded-2xl border border-border bg-surface p-6 transition-transform hover:-translate-y-1">
-                <OrgLogo issuer={h.issuer} size={40} fallback={<Trophy className="text-primary" size={22} />} />
+                <OrgLogo issuer={h.issuer} size={30} fallback={<Trophy className="text-primary" size={22} />} />
                 <h3 className="font-display font-semibold">{h.name}</h3>
                 <p className="text-sm text-muted">
                   {h.issuer} · {h.year}
