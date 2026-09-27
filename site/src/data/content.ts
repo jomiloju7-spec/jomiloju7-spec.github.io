@@ -42,7 +42,7 @@ export const hero = {
   headline: profile.name,
   subhead: profile.tagline,
   description:
-    'Chemical Engineering undergraduate at the University of Lagos with a focus on environmental engineering and sustainable industrial practice — from material selection in production settings to process optimization.',
+    'Chemical Engineering undergraduate at the University of Lagos, focused on environmental engineering and sustainable industrial practice from material selection in production settings to process optimization.',
 };
 
 export const experience = [
@@ -51,7 +51,7 @@ export const experience = [
     org: 'CNN (Cable News Network), United States',
     period: '06/2025 — 11/2025',
     summary:
-      'Selected from over 10,800 applicants across 129 countries for a three-month journalism fellowship. Completed CNN Academy Hub coursework in storytelling, journalistic ethics, breaking news coverage and field reporting, and applied rigorous ethical frameworks to fact-driven environmental reporting.',
+      'Selected from over 10,800 applicants across 129 countries for a three-month journalism fellowship. Completed CNN Academy Hub coursework in storytelling, journalistic ethics, breaking news coverage, and field reporting, and applied rigorous ethical frameworks to fact-driven environmental reporting.',
     placeholder: false,
   },
   {
